@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import FileUpload from '../components/FileUpload';
 import { Button } from '../components/ui/button';
+import { Card } from '../components/ui/card';
 
 const Index = () => {
   return (
