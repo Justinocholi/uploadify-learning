@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Globe } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
@@ -35,7 +35,11 @@ const Navbar = () => {
                 onClick={toggleLanguageDropdown}
                 className="flex items-center text-gray-700 hover:text-primary transition-colors"
               >
-                <Globe className="h-4 w-4 mr-1" />
+                <img 
+                  src="/lovable-uploads/dcc14cdd-3565-4892-a2b0-eb64808bac0d.png" 
+                  alt="Globe" 
+                  className="h-4 w-4 mr-1"
+                />
                 <span>EN</span>
                 <ChevronDown className="h-4 w-4 ml-1" />
               </button>
@@ -43,20 +47,36 @@ const Navbar = () => {
               {isLanguageOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border">
                   <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
-                    <span className="mr-2 text-lg">🇬🇧</span>
+                    <img 
+                      src="/lovable-uploads/7025eaeb-de9b-4f9d-9b71-d6fbafd2fdee.png" 
+                      alt="UK Flag" 
+                      className="mr-2 h-5 w-7 object-cover"
+                    />
                     English
                   </button>
                   <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
-                    <span className="mr-2 text-lg">🇪🇸</span>
+                    <img 
+                      src="/lovable-uploads/7d7b4fee-553c-4c7f-9356-a3d82d46bd3b.png" 
+                      alt="Spain Flag" 
+                      className="mr-2 h-5 w-7 object-cover"
+                    />
                     Español
                   </button>
                   <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
-                    <span className="mr-2 text-lg">🇫🇷</span>
-                    Français
+                    <img 
+                      src="/lovable-uploads/2d13f129-1f19-46e3-b56c-6f2dea599427.png" 
+                      alt="Germany Flag" 
+                      className="mr-2 h-5 w-7 object-cover"
+                    />
+                    Deutsch
                   </button>
                   <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
-                    <span className="mr-2 text-lg">🇩🇪</span>
-                    Deutsch
+                    <img 
+                      src="/lovable-uploads/c77277c0-dbef-4c76-a616-3a6d173b5c24.png" 
+                      alt="France Flag" 
+                      className="mr-2 h-5 w-7 object-cover"
+                    />
+                    Français
                   </button>
                 </div>
               )}
