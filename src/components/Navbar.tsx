@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link to="/learners" className="text-gray-700 hover:text-primary transition-colors">
               For Learners
             </Link>
-            <Link to="/pricing" className="text-[#0EA5E9] hover:text-[#0EA5E9]/90 font-medium transition-colors">
+            <Link to="/pricing" className="text-primary hover:text-primary/90 font-medium transition-colors underline underline-offset-4">
               Pricing
             </Link>
             <div className="relative">
@@ -42,16 +42,20 @@ const Navbar = () => {
               
               {isLanguageOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border">
-                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
+                    <span className="mr-2 text-lg">🇬🇧</span>
                     English
                   </button>
-                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
+                    <span className="mr-2 text-lg">🇪🇸</span>
                     Español
                   </button>
-                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
+                    <span className="mr-2 text-lg">🇫🇷</span>
                     Français
                   </button>
-                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center">
+                    <span className="mr-2 text-lg">🇩🇪</span>
                     Deutsch
                   </button>
                 </div>
